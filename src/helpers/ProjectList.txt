@@ -1,0 +1,40 @@
+// Correct the paths and filenames as necessary
+import mailImage from '../assets/Mail.jpeg';  // Assuming the actual file is named 'Mail.jpeg'
+import rocketImage from '../assets/rocket.jpg';
+import salonImage from '../assets/salon.jpg';
+import serverImage from '../assets/server.jpg';
+import webdebImage from '../assets/webdeb.jpg';  // Make sure this is correct
+
+
+export const ProjectList = [
+    {
+        name: 'Social Media Website',
+        image: 'Mail',
+        skills: "JavaScript,HTML,CSS",
+    },
+    {
+        name: 'Data Analysis with python',
+        image: 'python',
+        skills: "React,Node.js,MongoDB",
+    },
+    {
+        name: 'Rocket Launch',
+        image: 'rocket',
+        skills: "React,Node.js,MongoDB,SpotifyAPI",
+    },
+    {
+        name: 'Salon Website',
+        image: 'salon',
+        skills: "React,Node.js,MySQL,GraphQL",
+    },
+    {
+        name: 'Server Management',
+        image: 'server',
+        skills: "JavaScript,HTML,CSS",
+    },
+    {
+        name: 'Web Development',
+        image: 'webdeb',
+        skills: "React Native,JavaScript,HTML,CSS",
+    },
+];
