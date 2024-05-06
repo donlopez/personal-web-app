@@ -1,9 +1,9 @@
-// Correct the paths and filenames as necessary
-import mailImage from '../assets/Mail.jpeg';  // Assuming the actual file is named 'Mail.jpeg'
-import rocketImage from '../assets/rocket.jpg';
-import salonImage from '../assets/salon.jpg';
-import serverImage from '../assets/server.jpg';
-import webdebImage from '../assets/webdeb.jpg';  // Make sure this is correct
+import Mail from "../assets/Mail.jpeg";
+import python from '../assets/Mail.jpeg';
+import rocket from '../assets/rocket.jpg';
+import salon from '../assets/salon.jpg';
+import server from '../assets/server.jpg';
+import webdeb from '../assets/webdeb.jpg';  
 
 
 export const ProjectList = [
