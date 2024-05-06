@@ -5,19 +5,21 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
+import profilePic from '../assets/ProfPic.jpeg';
+import bannerImage from '../assets/matrixRec.jpeg';
 
 function Home() {
   return (
     <div className="home">
     <header>
       <div className="banner">
-        <img src="https://github.com/donlopez/JulioLopez.github.io/raw/main/pics/matrixRec.JPG" alt="Banner" className="banner-image" />
+        <img src={bannerImage} alt="Banner" className="banner-image" />
       </div>
     </header>
 
     <div className="profile-picture-container">
       <Link to="/profile">  
-        <img src="https://github.com/donlopez/JulioLopez.github.io/raw/main/pics/Prof%20Pic%20Squared.jpg" alt="Julio Lopez" className="profile-picture" />
+        <img src={profilePic} alt="Julio Lopez" className="profile-picture" />
       </Link>
     </div>
 
