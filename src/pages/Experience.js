@@ -9,28 +9,33 @@ function Experience() {
     <div className="experience">
       <VerticalTimeline lineColor="#000">
         <VerticalTimelineElement className="vertical-timeline-element--education"
-         date="2008 - 2009"
+         date="2022 - 2024"
          iconStyle={{background: "#3e497a", color: "#fff"}}
          icon={<SchoolIcon />}
          >
-          <h3 className="vertical-timeline-element-title"> GED, Boston Mass. </h3>
-          <p> General Education Diploma </p>
+          <h3 className="vertical-timeline-element-title"> Valencia College </h3>
+
+          <h4 className="vertical-timeline-element-subtitle">
+            Orlando, FL
+          </h4>
+
+          <p> Associate' Degree In Computer Science </p>
          </VerticalTimelineElement>
          <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2021 - Present"
+          date="2025 - Present"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Valencia College, Orlando, FL
+            Valencia College
           </h3>
 
           <h4 className="vertical-timeline-element-subtitle">
-            Bachelor's Degree
+            Orlando, FL
           </h4>
 
-          <p> Computer Science</p>
+          <p>Bachelor's Degree in Computer Science</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -39,7 +44,7 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            CDL Class A - Kenan Advantage Group
+            CDL Class A Driver - Kenan Advantage Group
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Orlando, FL
@@ -53,7 +58,7 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Contractor / Freelance - Orlando FL
+            IT Consultant / Contractor - Orlando FL
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Orlando, FL

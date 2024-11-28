@@ -33,22 +33,42 @@ function Home() {
         <Link to="mailto: julio@codingxpro.com" target="_blank" rel="noopener noreferrer"><EmailIcon /></Link>
       </div>
       </div>
-      <div className="skills"> <h1> Skills </h1> 
-      <ol className="list">
-        <li className="item">  
-          <h2> Front-End </h2>
-          <span> ReactJS, HTML, CSS, React Native, NPM, Bootstrap, MaterialUI, Yarn, TailwindCSS, StyledComponents </span>
-        </li>
-        <li className="item">  
-          <h2> Back-End </h2>
-          <span> NodeJS, Java Spring, MySQL, AWS S3, MS SQL </span>
-        </li>
-        <li className="item">  
-          <h2> Languages </h2>
-          <span>JavaScript, Java, Python, C#, C, C++, TypeScript </span>
-        </li>
-      </ol>
-      </div>
+      <div className="skills">
+  <h1> Skills </h1>
+  <ol className="list">
+    <li className="item">
+      <h2> Front-End </h2>
+      <span> 
+        ReactJS, HTML, CSS, React Native, NPM, Bootstrap, MaterialUI, Yarn, TailwindCSS, StyledComponents, Jupiter Notebook
+      </span>
+    </li>
+    <li className="item">
+      <h2> Back-End </h2>
+      <span> 
+        NodeJS, Java Spring, Express, MySQL, PyTest, Docker, AWS (DynamoDB, S3, Lambda, API Gateway, RDS, Route 53, EC2, CodePipeline, CloudFormation, Amplify, Elastic Container Service) 
+      </span>
+    </li>
+    <li className="item">
+      <h2> Languages </h2>
+      <span>
+        JavaScript, Java, Python, C#, C, C++, TypeScript, Ejs, SQL, Bash, PowerShell, JSON, Markdown
+      </span>
+    </li>
+    <li className="item">
+      <h2> DevOps & Tools </h2>
+      <span> 
+        Git, GitHub,Terraform, Nginx
+      </span>
+    </li>
+    <li className="item">
+      <h2> Data Science & Visualization </h2>
+      <span> 
+        Tableau, NumPy, Pandas, Matplotlib, Seaborn
+      </span>
+    </li>
+  </ol>
+</div>
+
     </div>
   )
 }
