@@ -19,7 +19,7 @@ function Experience() {
             Orlando, FL
           </h4>
 
-          <p> Associate' Degree In Computer Science </p>
+          <p> Associate's Degree In Computer Science </p>
          </VerticalTimelineElement>
          <VerticalTimelineElement
           className="vertical-timeline-element--education"
