@@ -39,31 +39,31 @@ function Home() {
     <li className="item">
       <h2> Front-End </h2>
       <span> 
-        ReactJS, HTML, CSS, React Native, NPM, Bootstrap, MaterialUI, Yarn, TailwindCSS, StyledComponents, Jupiter Notebook
+        ReactJS, HTML, CSS, React Native, NPM, Bootstrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
       </span>
     </li>
     <li className="item">
       <h2> Back-End </h2>
       <span> 
-        NodeJS, Java Spring, Express, MySQL, PyTest, Docker, AWS (DynamoDB, S3, Lambda, API Gateway, RDS, Route 53, EC2, CodePipeline, CloudFormation, Amplify, Elastic Container Service) 
+        NodeJS, Java Spring, Express, MySQL, Ejs, Docker, AWS (DynamoDB, S3, Lambda, API Gateway, RDS, Route 53, EC2, CodePipeline, CloudFormation, Elastic Container Service) 
       </span>
     </li>
     <li className="item">
       <h2> Languages </h2>
       <span>
-        JavaScript, Java, Python, C#, C, C++, TypeScript, Ejs, SQL, Bash, PowerShell, JSON, Markdown
+        JavaScript, Java, Python, C#, C, C++, TypeScript, SQL, Bash, PowerShell, JSON, Markdown
       </span>
     </li>
     <li className="item">
       <h2> DevOps & Tools </h2>
       <span> 
-        Git, GitHub,Terraform, Nginx
+        Git, GitHub, Visual Studio Code, Terraform, Nginx, AWS Amplify, PyTest
       </span>
     </li>
     <li className="item">
       <h2> Data Science & Visualization </h2>
       <span> 
-        Tableau, NumPy, Pandas, Matplotlib, Seaborn
+        Tableau, NumPy, Pandas, Matplotlib, Seaborn, Jupyter Notebook
       </span>
     </li>
   </ol>
