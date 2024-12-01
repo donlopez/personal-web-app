@@ -58,7 +58,7 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            IT Consultant / Contractor - Orlando FL
+            IT Consultant / Contractor 
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Orlando, FL
