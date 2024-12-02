@@ -45,10 +45,7 @@ Below is the architecture diagram for the deployment workflow:
 
 ## How to Access
 ### Live Website
-Visit the live version of this website: [React App Personal Website](https://your-react-app-url.com)
-
-### GitHub Repository
-View the source code: [React App GitHub Repository](https://github.com/your-repo/react-app-website)
+Visit the live version of this website: [React App Personal Website](https://lopezbio.com)
 
 ---
 
