@@ -11,21 +11,21 @@ function Projects() {
   return (
     <div className="projects">
       <h1> My Personal Projects </h1>
-      <Link to="/projects/black-lion-project">
-          <ProjectItem name="Black Lion Project" image={nodeapp} />
-        </Link>
-      <h1 style={{ color: "red" }}> (Missing context... Coming soon..) </h1>
+      
       <div className="projectList">
-        
-        <Link to="/projects/data-analysis">
-          <ProjectItem name="Data Analysis" image={python} />
-        </Link>
-        <Link to="/projects/android-app">
-          <ProjectItem name="Android App" image={android} />
+        <Link to="/projects/black-lion-project">
+          <ProjectItem name="Black Lion Project" image={nodeapp} />
         </Link>
         <Link to="/projects/react-app-website">
           <ProjectItem name="React App Website" image={reactLogo} />
         </Link>
+        <Link to="/projects/data-analysis">
+          <ProjectItem name="Data Analysis (Coming soon..)" image={python} />
+        </Link>
+        <Link to="/projects/android-app">
+          <ProjectItem name="Android App (Coming soon..)" image={android} />
+        </Link>
+        
         
       </div>
     </div>
