@@ -30,7 +30,7 @@ function Home() {
         <Link to="https://www.linkedin.com/in/julio-lopez-380937282/"><LinkedInIcon /></Link>
         <Link to="https://github.com/donlopez" target="_blank" rel="noopener noreferrer"><GitHubIcon /></Link>
         <Link to="https://twitter.com/dominicanking83" target="_blank" rel="noopener noreferrer"><TwitterIcon /></Link>
-        <Link to="mailto: julio@codingxpro.com" target="_blank" rel="noopener noreferrer"><EmailIcon /></Link>
+        <Link to="mailto: juliolopez9260@gmail.com" target="_blank" rel="noopener noreferrer"><EmailIcon /></Link>
       </div>
       </div>
       <div className="skills">
