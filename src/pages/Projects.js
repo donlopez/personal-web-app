@@ -3,6 +3,7 @@ import ProjectItem from "../components/ProjectItem";
 import { Link } from "react-router-dom";
 import python from "../assets/python.jpeg"; 
 import nodeapp from "../assets/nodeapp.jpeg";
+import planit from "../assets/planit.jpg";
 import reactLogo from "../assets/webdeb.jpeg";  
 import "../styles/Projects.css";
 
@@ -12,6 +13,9 @@ function Projects() {
       <h1> My Personal Projects </h1>
       
       <div className="projectList">
+        <Link to="/projects/planit">
+          <ProjectItem name="Event Planner App (Planit)" image={planit} />
+        </Link>
         <Link to="/projects/black-lion-project">
           <ProjectItem name="Black Lion Project" image={nodeapp} />
         </Link>

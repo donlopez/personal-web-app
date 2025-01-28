@@ -4,8 +4,9 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 
+import Planit from "./pages/Planit";
 import DataAnalysis from "./pages/DataAnalysis";
-import ReactAppWebsite from "./pages/ReactAppWebsite";  // New import
+import ReactAppWebsite from "./pages/ReactAppWebsite";  
 import BlackLionProject from "./pages/BlackLionProject";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+        <Route path="/projects/planit" element={<Planit />} /> 
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
