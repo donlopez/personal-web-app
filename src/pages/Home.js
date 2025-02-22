@@ -5,7 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
-import profilePic from '../assets/ProfPic.jpeg';
+import profilePic from '../assets/ProfPic1.jpg';
 import bannerImage from '../assets/matrixRec.jpeg';
 
 function Home() {
