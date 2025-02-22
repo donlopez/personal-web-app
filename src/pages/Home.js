@@ -48,8 +48,36 @@ function Home() {
           <Link to="mailto:juliolopez9260@gmail.com" target="_blank" rel="noopener noreferrer"><EmailIcon /></Link>
         </div>
       </div>
+
+      {/* Skills Section */}
+      <div className="skills">
+        <h1>Skills</h1>
+        <ol className="list">
+          <li className="item">
+            <h2>Front-End</h2>
+            <span>ReactJS, HTML, CSS, React Native, NPM, Bootstrap, MaterialUI, Yarn, TailwindCSS, StyledComponents</span>
+          </li>
+          <li className="item">
+            <h2>Back-End</h2>
+            <span>NodeJS, Java Spring, Express, MySQL, Ejs, Docker, AWS (DynamoDB, S3, Lambda, API Gateway, RDS, Route 53, EC2, CodePipeline, CloudFormation, Elastic Container Service)</span>
+          </li>
+          <li className="item">
+            <h2>Languages</h2>
+            <span>JavaScript, Java, Python, C#, C, C++, TypeScript, SQL, Bash, PowerShell, JSON, Markdown</span>
+          </li>
+          <li className="item">
+            <h2>DevOps & Tools</h2>
+            <span>Git, GitHub, Visual Studio Code, Terraform, Nginx, AWS Amplify, PyTest</span>
+          </li>
+          <li className="item">
+            <h2>Data Science & Visualization</h2>
+            <span>Tableau, NumPy, Pandas, Matplotlib, Seaborn, Jupyter Notebook</span>
+          </li>
+        </ol>
+      </div>
     </div>
   );
 }
 
 export default Home;
+
