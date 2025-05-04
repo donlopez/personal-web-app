@@ -91,12 +91,13 @@ function Home() {
 
       {/* Blog Section */}
       <div className="blog-section">
-        <h1>Blogs</h1>
-
-        {/* Hamburger toggle button */}
-        <button className="blog-toggle-button" onClick={() => setMenuOpen(true)}>
-          ☰
-        </button>
+        {/* Title row with hamburger */}
+        <div className="blog-header-row">
+          <h1>Blogs</h1>
+          <button className="blog-toggle-button" onClick={() => setMenuOpen(true)}>
+            ☰
+          </button>
+        </div>
 
         <div className="blog-container">
           {/* Sidebar menu */}

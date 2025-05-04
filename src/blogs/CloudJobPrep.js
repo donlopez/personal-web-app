@@ -1,10 +1,35 @@
 import React from 'react';
 import '../styles/BlogPage.css';
 import profilePic from '../assets/ProfPic1.jpg';
+import blogBanner from '../assets/cloud-job-prep-banner.png';
+import { Helmet } from 'react-helmet';
+
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  EmailShareButton,
+  LinkedinShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  EmailIcon,
+  LinkedinIcon,
+} from 'react-share';
 
 function CloudJobPrep() {
+  const pageUrl = window.location.href;
+  const pageTitle = 'Bridging the Gap: Preparing for Cloud Jobs with Real Experience';
+
   return (
     <div className="blog-article">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content="How hands-on experience can better prepare students for careers in cloud computing." />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content="Insights into cloud education, real experience, and the gap between certification and competence." />
+        <meta property="og:image" content={`${window.location.origin}/assets/cloud-job-prep-banner.png`} />
+        <meta property="og:url" content={pageUrl} />
+      </Helmet>
+
       <div className="blog-header">
         <div className="author-info">
           <img src={profilePic} alt="Julio Lopez" className="author-pic" />
@@ -13,7 +38,7 @@ function CloudJobPrep() {
             <p className="blog-date">April 14, 2025</p>
           </div>
         </div>
-        <h1 className="blog-title">Bridging the Gap: Preparing for Cloud Jobs with Real Experience</h1>
+        <img src={blogBanner} alt="Bridging the Gap Banner" className="blog-banner" />
       </div>
 
       <div className="blog-body">
@@ -78,6 +103,22 @@ function CloudJobPrep() {
           skills-based teaching. Employers must prioritize hands-on competence. Together, we can reshape cloud education
           and hiring for the better.
         </p>
+
+        <div className="share-buttons">
+          <p>Share this article:</p>
+          <FacebookShareButton url={pageUrl} quote={pageTitle} hashtag="#cloudjobs">
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+          <TwitterShareButton url={pageUrl} title={pageTitle} hashtags={['cloudcomputing', 'careers']}>
+            <TwitterIcon size={32} round />
+          </TwitterShareButton>
+          <LinkedinShareButton url={pageUrl} title={pageTitle} source="Julio Lopez Blog">
+            <LinkedinIcon size={32} round />
+          </LinkedinShareButton>
+          <EmailShareButton url={pageUrl} subject="Check this out" body="You might find this blog insightful!">
+            <EmailIcon size={32} round />
+          </EmailShareButton>
+        </div>
 
         <h2>Works Cited</h2>
         <ul className="works-cited">
