@@ -53,15 +53,28 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2015 - present"
+          date="2015 - 2024"
           iconStyle={{ background: "#ff4500", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            IT Consultant / Contractor 
+            Owner Operator - Kenan Advantage Group 
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Orlando, FL
+          </h4>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2025 - Present"
+          iconStyle={{ background: "#ff4500", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Safety & Risk - Toho Water Authority 
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Kissimme, FL
           </h4>
         </VerticalTimelineElement>
       </VerticalTimeline>
