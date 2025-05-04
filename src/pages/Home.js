@@ -31,10 +31,10 @@ const blogPosts = [
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const { blogId } = useParams();
   const navigate = useNavigate();
 
-  // Map paths to components
   const blogComponents = {
     "cloud-computing": <CloudComputing />,
     "framework-comparison": <FrameworkComparison />,
@@ -86,18 +86,31 @@ function Home() {
       {/* Blog Section */}
       <div className="blog-section">
         <h1>Blogs</h1>
+
+        {/* Hamburger toggle button */}
+        <button className="blog-toggle-button" onClick={() => setMenuOpen(true)}>
+          ☰
+        </button>
+
         <div className="blog-container">
-          <div className="blog-menu">
+          {/* Sidebar menu */}
+          <div className={`blog-menu ${menuOpen ? 'open' : ''}`}>
+            <button className="blog-close-button" onClick={() => setMenuOpen(false)}>✕</button>
             {blogPosts.map((post, index) => (
               <div
                 key={index}
                 className={`blog-title ${selectedPath === post.path ? 'active' : ''}`}
-                onClick={() => navigate(`/blog/${post.path}`)}
+                onClick={() => {
+                  navigate(`/blog/${post.path}`);
+                  setMenuOpen(false);
+                }}
               >
                 {post.title}
               </div>
             ))}
           </div>
+
+          {/* Blog content */}
           <div className="blog-content">
             {selectedBlogComponent}
           </div>

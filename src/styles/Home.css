@@ -160,6 +160,7 @@
 
 .blog-section {
   padding: 2rem;
+  position: relative;
 }
 
 .blog-container {
@@ -190,4 +191,57 @@
 .blog-content {
   flex: 1;
 }
+
+/* Toggle Buttons */
+.blog-toggle-button {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* ✕ close button — hidden by default */
+.blog-close-button {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .blog-container {
+    flex-direction: column;
+  }
+
+  .blog-menu {
+    display: none;
+    flex-direction: column;
+    border-right: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+    z-index: 999;
+    padding: 1rem;
+  }
+
+  .blog-menu.open {
+    display: flex;
+  }
+
+  .blog-menu.open .blog-close-button {
+    display: block;
+  }
+
+  .blog-toggle-button {
+    display: block;
+  }
+}
+
+
 
