@@ -13,8 +13,13 @@ import bannerImage from '../assets/matrixRec.jpeg';
 import CloudComputing from '../blogs/CloudComputing';
 import FrameworkComparison from '../blogs/FrameworkComparison';
 import AwsLambda from '../blogs/AwsLambda';
+import CloudJobPrep from '../blogs/CloudJobPrep';
 
 const blogPosts = [
+  {
+    title: "Bridging the Gap: Preparing for Cloud Jobs",
+    path: "cloud-job-prep"
+  },
   {
     title: "Breaking into Cloud Computing",
     path: "cloud-computing"
@@ -36,12 +41,13 @@ function Home() {
   const navigate = useNavigate();
 
   const blogComponents = {
+    "cloud-job-prep": <CloudJobPrep />,
     "cloud-computing": <CloudComputing />,
     "framework-comparison": <FrameworkComparison />,
     "aws-lambda": <AwsLambda />
   };
 
-  const selectedPath = blogId || "cloud-computing";
+  const selectedPath = blogId || "cloud-job-prep";
   const selectedBlogComponent = blogComponents[selectedPath];
 
   return (
