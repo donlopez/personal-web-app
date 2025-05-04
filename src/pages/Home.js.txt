@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -9,40 +8,8 @@ import '../styles/Home.css';
 import profilePic from '../assets/ProfPic1.jpg';
 import bannerImage from '../assets/matrixRec.jpeg';
 
-// Blog components
-import CloudComputing from '../blogs/CloudComputing';
-import FrameworkComparison from '../blogs/FrameworkComparison';
-import AwsLambda from '../blogs/AwsLambda';
-
-const blogPosts = [
-  {
-    title: "Breaking into Cloud Computing",
-    path: "cloud-computing"
-  },
-  {
-    title: "React vs Angular vs Vue",
-    path: "framework-comparison"
-  },
-  {
-    title: "Mastering AWS Lambda",
-    path: "aws-lambda"
-  }
-];
-
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const { blogId } = useParams();
-  const navigate = useNavigate();
-
-  // Map paths to components
-  const blogComponents = {
-    "cloud-computing": <CloudComputing />,
-    "framework-comparison": <FrameworkComparison />,
-    "aws-lambda": <AwsLambda />
-  };
-
-  const selectedPath = blogId || "cloud-computing";
-  const selectedBlogComponent = blogComponents[selectedPath];
 
   return (
     <div className="home">
@@ -52,7 +19,7 @@ function Home() {
         </div>
       </header>
 
-      {/* Profile Picture */}
+      {/* Profile Picture with Click Event */}
       <div className="profile-picture-container">
         <img
           src={profilePic}
@@ -62,7 +29,7 @@ function Home() {
         />
       </div>
 
-      {/* Modal */}
+      {/* Modal for Enlarged Profile Picture */}
       {isModalOpen && (
         <div className="modal" onClick={() => setIsModalOpen(false)}>
           <div className="modal-content">
@@ -71,7 +38,6 @@ function Home() {
         </div>
       )}
 
-      {/* About */}
       <div className="about">
         <h2>Julio Lopez</h2>
         <div className="prompt">
@@ -83,28 +49,35 @@ function Home() {
         </div>
       </div>
 
-      {/* Blog Section */}
-      <div className="blog-section">
-        <h1>Blogs</h1>
-        <div className="blog-container">
-          <div className="blog-menu">
-            {blogPosts.map((post, index) => (
-              <div
-                key={index}
-                className={`blog-title ${selectedPath === post.path ? 'active' : ''}`}
-                onClick={() => navigate(`/blog/${post.path}`)}
-              >
-                {post.title}
-              </div>
-            ))}
-          </div>
-          <div className="blog-content">
-            {selectedBlogComponent}
-          </div>
-        </div>
+      {/* Skills Section */}
+      <div className="skills">
+        <h1>Skills</h1>
+        <ol className="list">
+          <li className="item">
+            <h2>Front-End</h2>
+            <span>ReactJS, HTML, CSS, React Native, NPM, Bootstrap, MaterialUI, Yarn, TailwindCSS, StyledComponents</span>
+          </li>
+          <li className="item">
+            <h2>Back-End</h2>
+            <span>NodeJS, Java Spring, Express, MySQL, Ejs, Docker, AWS (DynamoDB, S3, Lambda, API Gateway, RDS, Route 53, EC2, CodePipeline, CloudFormation, Elastic Container Service)</span>
+          </li>
+          <li className="item">
+            <h2>Languages</h2>
+            <span>JavaScript, Java, Python, C#, C, C++, TypeScript, SQL, Bash, PowerShell, JSON, Markdown</span>
+          </li>
+          <li className="item">
+            <h2>DevOps & Tools</h2>
+            <span>Git, GitHub, Visual Studio Code, Terraform, Nginx, AWS Amplify, PyTest</span>
+          </li>
+          <li className="item">
+            <h2>Data Science & Visualization</h2>
+            <span>Tableau, NumPy, Pandas, Matplotlib, Seaborn, Jupyter Notebook</span>
+          </li>
+        </ol>
       </div>
     </div>
   );
 }
 
 export default Home;
+
