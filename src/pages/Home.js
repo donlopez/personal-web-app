@@ -79,9 +79,17 @@ function Home() {
 
       {/* About */}
       <div className="about">
-        <h2>Julio Lopez</h2>
+        
         <div className="prompt">
-          <p>A cloud architect and data analyst with a blend of technical expertise and creative problem-solving.</p>
+          <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+          👋 Hello, my name is Julio Lopez—welcome to my portfolio site!
+          </p>
+          <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+            Here you’ll find an overview of my work, experience, and passion for cloud architecture and technology.  
+            To learn more about my background and skills, check out the Projects or Experience sections.  
+            For thoughts on cloud computing, tech trends, and hands-on training, visit the Blog section.
+          </p>
+
           <Link to="https://www.linkedin.com/in/julio-lopez-380937282/"><LinkedInIcon /></Link>
           <Link to="https://github.com/donlopez" target="_blank" rel="noopener noreferrer"><GitHubIcon /></Link>
           <Link to="https://twitter.com/dominicanking83" target="_blank" rel="noopener noreferrer"><TwitterIcon /></Link>
