@@ -17,7 +17,7 @@ import CloudJobPrep from '../blogs/CloudJobPrep';
 
 const blogPosts = [
   {
-    title: "Bridging the Gap: Preparing for Cloud Jobs",
+    title: "Preparing for Cloud Jobs",
     path: "cloud-job-prep"
   },
   {

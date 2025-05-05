@@ -1,10 +1,33 @@
 import React from 'react';
 import '../styles/BlogPage.css';
 import profilePic from '../assets/ProfPic1.jpg';
+import blogBanner from '../assets/cloud-computing-banner.png';
+import { Helmet } from 'react-helmet';
+
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  EmailIcon,
+} from 'react-share';
 
 function CloudComputing() {
+  const pageUrl = window.location.href;
+  const pageTitle = 'Breaking into Cloud Computing: A Beginner’s Guide';
+
   return (
     <div className="blog-article">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content="Learn how to start your journey in cloud computing—from certifications to hands-on experience." />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content="Tips and tools to launch your cloud career." />
+        <meta property="og:image" content={`${window.location.origin}/assets/cloud-computing-banner.png`} />
+        <meta property="og:url" content={pageUrl} />
+      </Helmet>
+
       <div className="blog-header">
         <div className="author-info">
           <img src={profilePic} alt="Julio Lopez" className="author-pic" />
@@ -13,7 +36,7 @@ function CloudComputing() {
             <p className="blog-date">April 2025</p>
           </div>
         </div>
-        <h1 className="blog-title">Breaking into Cloud Computing: A Beginner’s Guide</h1>
+        <img src={blogBanner} alt="Breaking into Cloud Computing Banner" className="blog-banner" />
       </div>
 
       <div className="blog-body">
@@ -53,6 +76,19 @@ function CloudComputing() {
           Cloud computing is a marathon, not a sprint. With the right mindset, a plan for learning, and a bit of curiosity, you’ll
           be well on your way to becoming a valuable asset in any tech organization.
         </p>
+
+        <div className="share-buttons">
+          <p>Share this article:</p>
+          <FacebookShareButton url={pageUrl} quote={pageTitle} hashtag="#cloudcomputing">
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+          <TwitterShareButton url={pageUrl} title={pageTitle} hashtags={['cloudcomputing', 'techcareers']}>
+            <TwitterIcon size={32} round />
+          </TwitterShareButton>
+          <EmailShareButton url={pageUrl} subject="Check this out" body="This guide to starting in cloud computing is worth reading!">
+            <EmailIcon size={32} round />
+          </EmailShareButton>
+        </div>
       </div>
     </div>
   );

@@ -80,4 +80,10 @@
     margin: 0;
     font-weight: bold;
   }
+
+  .blog-body p {
+    text-indent: 2em;
+    line-height: 2.5; /* ⬅️ This increases line spacing */
+    margin-bottom: 1.2rem;
+  }
   
