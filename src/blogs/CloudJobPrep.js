@@ -16,7 +16,7 @@ import {
 } from 'react-share';
 
 function CloudJobPrep() {
-  const pageUrl = window.location.href;
+  const pageUrl = 'https://www.lopezbio.com/blog/cloud-job-prep';
   const pageTitle = 'Bridging the Gap: Preparing for Cloud Jobs with Real Experience';
 
   return (
@@ -26,8 +26,13 @@ function CloudJobPrep() {
         <meta name="description" content="How hands-on experience can better prepare students for careers in cloud computing." />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content="Insights into cloud education, real experience, and the gap between certification and competence." />
-        <meta property="og:image" content={`${window.location.origin}/assets/cloud-job-prep-banner.png`} />
+        <meta property="og:image" content="https://www.lopezbio.com/assets/cloud-job-prep-banner.png" />
         <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content="How real-world cloud experience bridges the gap between learning and doing." />
+        <meta name="twitter:image" content="https://www.lopezbio.com/assets/cloud-job-prep-banner.png" />
       </Helmet>
 
       <div className="blog-header">
