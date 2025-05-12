@@ -52,7 +52,7 @@
     text-align: center;
     background-color: #000000;
     color: #f0f0f0;
-    padding: 60px 1rem 60px 1rem; /* ⬅️ adds 100px top padding */
+    padding: 60px 1rem 60px 1rem; 
     box-sizing: border-box;
   }
   
@@ -104,7 +104,7 @@
   
   @media only screen and (max-width: 600px) {
     .about .prompt {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.4;
       }
 
