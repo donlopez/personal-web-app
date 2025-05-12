@@ -87,3 +87,10 @@
     margin-bottom: 1.2rem;
   }
   
+  .interactive-map {
+    border-radius: 12px;
+    border: 2px solid rgb(249, 248, 248);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+  

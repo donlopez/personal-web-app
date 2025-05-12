@@ -14,6 +14,7 @@ import CloudComputing from '../blogs/CloudComputing';
 import FrameworkComparison from '../blogs/FrameworkComparison';
 import AwsLambda from '../blogs/AwsLambda';
 import CloudJobPrep from '../blogs/CloudJobPrep';
+import GraduationMapBlog from '../blogs/GraduationMapBlog';
 
 const blogPosts = [
   {
@@ -31,6 +32,10 @@ const blogPosts = [
   {
     title: "Mastering AWS Lambda",
     path: "aws-lambda"
+  },
+  {
+    title: "Graduation Rate Map",        
+    path: "graduation-map"
   }
 ];
 
@@ -44,7 +49,8 @@ function Home() {
     "cloud-job-prep": <CloudJobPrep />,
     "cloud-computing": <CloudComputing />,
     "framework-comparison": <FrameworkComparison />,
-    "aws-lambda": <AwsLambda />
+    "aws-lambda": <AwsLambda />,
+    "graduation-map": <GraduationMapBlog />
   };
 
   const selectedPath = blogId || "cloud-job-prep";
