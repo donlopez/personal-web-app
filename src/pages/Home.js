@@ -87,10 +87,10 @@ function Home() {
       {/* About Section */}
       <div className="about">
         <div className="prompt">
-          <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+          <p>
             👋 Hello, my name is Julio Lopez—welcome to my portfolio site!
           </p>
-          <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+          <p>
             Here you’ll find an overview of my work, experience, and passion for cloud architecture and technology.  
             To learn more about my background and skills, check out the Projects or Experience sections.  
             For thoughts on cloud computing, tech trends, and hands-on training, visit the Blog section.

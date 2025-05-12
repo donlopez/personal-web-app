@@ -52,8 +52,7 @@
     text-align: center;
     background-color: #000000;
     color: #f0f0f0;
-    padding: 60px 1rem 60px 1rem; /* ⬅️ adds 100px top padding */
-    box-sizing: border-box;
+    padding-bottom: 60px;
   }
   
   .about h2 {
@@ -64,20 +63,14 @@
   }
   
   .about .prompt {
-    width: 90%;
-    max-width: 700px;
-    font-size: 22px;
-    line-height: 1.6;
-    padding: 0 1rem;
-    box-sizing: border-box;
+    width: 40%;
+    font-size: 30px;
   }
-
-  .about .prompt svg {
+  .prompt svg {
     font-size: 60px;
     margin: 5px;
     color: white;
   }
-  
   
   .skills {
     font-size: 35px;
@@ -103,14 +96,14 @@
   }
   
   @media only screen and (max-width: 600px) {
-    .about .prompt {
-        font-size: 14px;
-        line-height: 1.4;
-      }
-
     .about h2 {
       padding-top: 60px;
       font-size: 40px;
+    }
+  
+    .about .prompt {
+      font-size: 20px;
+      width: 80%;
     }
   
     .skills {
@@ -124,6 +117,7 @@
       font-size: 30px;
     }
   }
+
 
 
   /* Modal background */
