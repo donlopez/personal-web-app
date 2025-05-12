@@ -18,6 +18,10 @@ import GraduationMapBlog from '../blogs/GraduationMapBlog';
 
 const blogPosts = [
   {
+    title: "U.S. Graduation Rate",   // Changed here
+    path: "graduation-map"
+  },
+  {
     title: "Preparing for Cloud Jobs",
     path: "cloud-job-prep"
   },
@@ -32,10 +36,6 @@ const blogPosts = [
   {
     title: "Mastering AWS Lambda",
     path: "aws-lambda"
-  },
-  {
-    title: "Graduation Rate Map",        
-    path: "graduation-map"
   }
 ];
 
@@ -53,7 +53,8 @@ function Home() {
     "graduation-map": <GraduationMapBlog />
   };
 
-  const selectedPath = blogId || "cloud-job-prep";
+  // Set default blog to Graduation Map
+  const selectedPath = blogId || "graduation-map";
   const selectedBlogComponent = blogComponents[selectedPath];
 
   return (
@@ -83,12 +84,11 @@ function Home() {
         </div>
       )}
 
-      {/* About */}
+      {/* About Section */}
       <div className="about">
-        
         <div className="prompt">
           <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
-          👋 Hello, my name is Julio Lopez—welcome to my portfolio site!
+            👋 Hello, my name is Julio Lopez—welcome to my portfolio site!
           </p>
           <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
             Here you’ll find an overview of my work, experience, and passion for cloud architecture and technology.  
@@ -107,7 +107,7 @@ function Home() {
       <div className="blog-section">
         {/* Title row with hamburger */}
         <div className="blog-header-row">
-          <h1>Blogs</h1>
+          <h1>U.S. Graduation Rate</h1> {/* Renamed from "Blogs" */}
           <button className="blog-toggle-button" onClick={() => setMenuOpen(true)}>
             ☰
           </button>
