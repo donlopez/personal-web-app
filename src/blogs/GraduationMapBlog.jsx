@@ -120,21 +120,13 @@ function GraduationMapBlog() {
       </div>
 
       {/* Search Bar */}
-      <div style={{ marginBottom: "1rem", position: "relative", maxWidth: "600px" }}>
+      <div className="map-search-bar">
         <input
           type="text"
           placeholder="Search institution..."
           value={search}
           onChange={handleSearchChange}
-          style={{
-            width: "100%",
-            padding: "0.75rem 1rem",
-            fontSize: "1rem",
-            borderRadius: "8px",
-            border: "1px solid #ccc",
-            outline: "none",
-            boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
-          }}
+          className="map-search-input"
         />
         {suggestions.length > 0 && (
           <ul style={{

@@ -107,7 +107,7 @@ function Home() {
       <div className="blog-section">
         {/* Title row with hamburger */}
         <div className="blog-header-row">
-          <h1>Bolgs</h1> {/* Renamed from "Blogs" */}
+          <h1>Blogs</h1> {/* Renamed from "Blogs" */}
           <button className="blog-toggle-button" onClick={() => setMenuOpen(true)}>
             ☰
           </button>
