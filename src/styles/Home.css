@@ -78,6 +78,15 @@
     color: white;
   }
   
+  .prompt img.x-icon {
+    width: 52px;
+    height: 52px;
+    margin: 5px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: contain;
+    transform: translateY(-30px); /* <- Nudge up to align */
+  }
   
   .skills {
     font-size: 35px;

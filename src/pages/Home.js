@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
+// import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 import profilePic from '../assets/ProfPic1.jpg';
 import bannerImage from '../assets/matrixRec.jpeg';
+import xIcon from '../assets/XIcon.png';
 
 // Blog components
 import CloudComputing from '../blogs/CloudComputing';
@@ -98,7 +99,9 @@ function Home() {
 
           <Link to="https://www.linkedin.com/in/julio-lopez-380937282/"><LinkedInIcon /></Link>
           <Link to="https://github.com/donlopez" target="_blank" rel="noopener noreferrer"><GitHubIcon /></Link>
-          <Link to="https://twitter.com/dominicanking83" target="_blank" rel="noopener noreferrer"><TwitterIcon /></Link>
+          <a href="https://twitter.com/dominicanking83" target="_blank" rel="noopener noreferrer">
+            <img src={xIcon} alt="X / Twitter" className="x-icon" />
+          </a>
           <Link to="mailto:juliolopez9260@gmail.com" target="_blank" rel="noopener noreferrer"><EmailIcon /></Link>
         </div>
       </div>
