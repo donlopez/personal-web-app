@@ -71,6 +71,7 @@ function GraduationMapBlog() {
   const handleSearchChange = (e) => {
     const value = e.target.value;
     setSearch(value);
+    setFlyTarget(null); // Clear flyTarget so it doesn't retrigger while typing
     if (!value.trim()) {
       setSuggestions([]);
       return;
@@ -85,10 +86,12 @@ function GraduationMapBlog() {
   };
 
   const handleSelectInstitution = (inst) => {
-    setSearch(inst.name);
     setSuggestions([]);
-    setFlyTarget({ lat: inst.lat, lon: inst.lon });
-  };
+    setTimeout(() => {
+      setSearch(inst.name);
+      setFlyTarget({ lat: inst.lat, lon: inst.lon });
+    }, 100);
+  };  
 
   return (
     <div className="blog-article">
@@ -120,7 +123,10 @@ function GraduationMapBlog() {
       </div>
 
       {/* Search Bar */}
-      <div className="map-search-bar">
+      <form
+        onSubmit={(e) => e.preventDefault()}
+        className="map-search-bar"
+      >
         <input
           type="text"
           placeholder="Search institution..."
@@ -158,7 +164,7 @@ function GraduationMapBlog() {
             ))}
           </ul>
         )}
-      </div>
+      </form>
 
       {/* Map */}
       <MapContainer
@@ -171,7 +177,7 @@ function GraduationMapBlog() {
           attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <MapAutoFly target={flyTarget} />
+        <MapAutoFly key={flyTarget ? `${flyTarget.lat}-${flyTarget.lon}-${Date.now()}` : 'none'} target={flyTarget} />
         <MarkerClusterGroup>
           {institutions.map((inst, idx) => (
             <CircleMarker
