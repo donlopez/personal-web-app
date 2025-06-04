@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
-import profilePic from '../assets/ProfPic1.jpg';
+import profilePic from '../assets/ProfileWeb.png';
 import bannerImage from '../assets/matrixRec.jpeg';
 import xIcon from '../assets/XIcon.png';
 
@@ -89,7 +89,7 @@ function Home() {
       <div className="about">
         <div className="prompt">
           <p>
-            👋 Hello, my name is Julio Lopez—welcome to my portfolio site!
+            Hello, my name is Julio Lopez—welcome to my portfolio site!
           </p>
           <p>
             Here you’ll find an overview of my work, experience, and passion for cloud architecture and technology.  

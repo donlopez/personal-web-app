@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/BlogPage.css';
-import profilePic from '../assets/ProfPic1.jpg';
+import profilePic from '../assets/ProfileWeb.png';
 import blogBanner from '../assets/framework-comparison-banner.png';
 import { Helmet } from 'react-helmet';
 
@@ -38,7 +38,7 @@ function FrameworkComparison() {
           <img src={profilePic} alt="Julio Lopez" className="author-pic" />
           <div className="author-text">
             <h2 className="author-name">Julio Lopez</h2>
-            <p className="blog-date">April 2025</p>
+            <p className="blog-date">March 26, 2025</p>
           </div>
         </div>
         <img src={blogBanner} alt="Framework Comparison Banner" className="blog-banner" />

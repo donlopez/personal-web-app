@@ -10,7 +10,7 @@ import MarkerClusterGroup from "react-leaflet-cluster";
 import Papa from "papaparse";
 import "leaflet/dist/leaflet.css";
 import "../styles/BlogPage.css";
-import profilePic from "../assets/ProfPic1.jpg";
+import profilePic from "../assets/ProfileWeb.png";
 import { Helmet } from "react-helmet";
 import {
   FacebookShareButton,

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/BlogPage.css';
-import profilePic from '../assets/ProfPic1.jpg';
+import profilePic from '../assets/ProfileWeb.png';
 import blogBanner from '../assets/cloud-job-prep-banner.png';
 import { Helmet } from 'react-helmet';
 

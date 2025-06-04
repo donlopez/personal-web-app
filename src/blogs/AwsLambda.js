@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/BlogPage.css';
-import profilePic from '../assets/ProfPic1.jpg';
+import profilePic from '../assets/ProfileWeb.png';
 import blogBanner from '../assets/aws-lambda-banner.png';
 import { Helmet } from 'react-helmet';
 
@@ -38,7 +38,7 @@ function AwsLambda() {
           <img src={profilePic} alt="Julio Lopez" className="author-pic" />
           <div className="author-text">
             <h2 className="author-name">Julio Lopez</h2>
-            <p className="blog-date">April 2025</p>
+            <p className="blog-date">March 11, 2025</p>
           </div>
         </div>
         <img src={blogBanner} alt="AWS Lambda Banner" className="blog-banner" />
