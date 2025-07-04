@@ -22,7 +22,7 @@ function Footer() {
           <Link to="https://github.com/donlopez" target="_blank" rel="noopener noreferrer"><GitHubIcon /></Link>
           <Link to="mailto: juliolopez9260@gmail.com" target="_blank" rel="noopener noreferrer"><EmailIcon /></Link>
         </div>
-        <p> &copy; 2025 Don Lopez Inc </p>
+        <p> &copy; Copyright 2025 Julio Lopez. All rights reserved. </p>
       </div>
     )
   }

@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import python from "../assets/python.jpeg"; 
 import nodeapp from "../assets/nodeapp.jpeg";
 import planit from "../assets/planit.jpg";
-import reactLogo from "../assets/webdeb.jpeg";  
+import reactLogo from "../assets/webdeb.jpeg"; 
+import dmsJavaBanner from "../assets/dms_java_banner.png";
 import "../styles/Projects.css";
 
 function Projects() {
@@ -25,7 +26,12 @@ function Projects() {
         <Link to="/projects/data-analysis">
           <ProjectItem name="Data Analysis" image={python} />
         </Link>
-        
+        <Link to="/projects/dms-java">
+          <ProjectItem
+            name="Data Management System (DMS JAVA)"
+            image={dmsJavaBanner}
+          />
+        </Link>
       </div>
     </div>
   );
