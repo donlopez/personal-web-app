@@ -6,6 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import profilePic from '../assets/ProfileWeb.png';
 import bannerImage from '../assets/matrixRec.jpeg';
 import xIcon from '../assets/XIcon.png';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import '../styles/Home.css';
 
 function Home() {
@@ -92,6 +93,19 @@ function Home() {
               <img src={xIcon} alt="X / Twitter" className="x-icon" style={{ width: "50px", height: "50px" }} />
             </div>
             <div className="linktree-text" style={{ textAlign: "center", flex: 1 }}>X / Twitter</div>
+          </div>
+        </a>
+        <a
+          href="https://www.youtube.com/@juliolopez9663"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="linktree-item"
+        >
+          <div className="linktree-inner" style={{ display: "flex", alignItems: "center", width: "100%" }}>
+            <div className="linktree-icon">
+              <YouTubeIcon style={{ fontSize: "60px", color: "#000000" }} />
+            </div>
+            <div className="linktree-text" style={{ textAlign: "center", flex: 1 }}>YouTube</div>
           </div>
         </a>
         <a
