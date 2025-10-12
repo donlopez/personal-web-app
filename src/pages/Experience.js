@@ -9,7 +9,7 @@ function Experience() {
     <div className="experience">
       <VerticalTimeline lineColor="#000">
         <VerticalTimelineElement className="vertical-timeline-element--education"
-         date="2022 - 2024"
+         date="2021 - 2024"
          iconStyle={{background: "#3e497a", color: "#fff"}}
          icon={<SchoolIcon />}
          >
@@ -23,7 +23,7 @@ function Experience() {
          </VerticalTimelineElement>
          <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2024 - Present"
+          date="2021 - 2025"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >

@@ -43,13 +43,10 @@ function Home() {
       {/* About Section */}
       <div className="about">
         <div className="prompt">
-          <p>Hello, my name is Julio Lopez—welcome to my portfolio site!</p>
+          <p>Hello, I’m Julio Lopez—welcome to my portfolio!</p>
           <p>
-            Here you’ll find an overview of my work, experience, and passion for
-            cloud architecture and technology. To learn more about my background
-            and skills, check out the Projects or Experience sections. For thoughts
-            on cloud computing, tech trends, and hands-on training, visit the
-            "Blogs" section above.
+          Here you can explore my work, experience, and passion for computer science, 
+          particularly in software development and data analysis, through the Projects and Experience sections.
           </p>
         </div>
       </div>
@@ -96,7 +93,7 @@ function Home() {
           </div>
         </a>
         <a
-          href="https://www.youtube.com/@juliolopez9663"
+          href="https://www.youtube.com/@juliolopez1983"
           target="_blank"
           rel="noopener noreferrer"
           className="linktree-item"
