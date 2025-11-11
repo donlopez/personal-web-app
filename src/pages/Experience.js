@@ -1,85 +1,114 @@
 import React from "react";
-import { VerticalTimeline, VerticalTimelineElement, }  from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
+import "../styles/Experience.css";
 
 function Experience() {
   return (
     <div className="experience">
-      <VerticalTimeline lineColor="#000">
-        <VerticalTimelineElement className="vertical-timeline-element--education"
-         date="2021 - 2024"
-         iconStyle={{background: "#3e497a", color: "#fff"}}
-         icon={<SchoolIcon />}
-         >
-          <h3 className="vertical-timeline-element-title"> Valencia College </h3>
+      <VerticalTimeline lineColor="#fff">
+        {/* Valencia College (Associate) */}
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2021 - 2024"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <a
+            href="https://valenciacollege.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="timeline-link"
+          >
+            <h3 className="vertical-timeline-element-title">Valencia College</h3>
+            <h4 className="vertical-timeline-element-subtitle">Orlando, FL</h4>
+            <p>Associate of Science in Computer Programming & Analysis</p>
+          </a>
+        </VerticalTimelineElement>
 
-          <h4 className="vertical-timeline-element-subtitle">
-            Orlando, FL
-          </h4>
-
-          <p> Associate of Science in Computer Programming & Analysis </p>
-         </VerticalTimelineElement>
-         <VerticalTimelineElement
+        {/* Valencia College (Bachelor) */}
+        <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2021 - 2025"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Valencia College
-          </h3>
-
-          <h4 className="vertical-timeline-element-subtitle">
-            Orlando, FL
-          </h4>
-
-          <p> Bachelor of Applied Science in Computing Technology & Software Development </p>
+          <a
+            href="https://valenciacollege.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="timeline-link"
+          >
+            <h3 className="vertical-timeline-element-title">Valencia College</h3>
+            <h4 className="vertical-timeline-element-subtitle">Orlando, FL</h4>
+            <p>Bachelor of Applied Science in Computing Technology & Software Development</p>
+          </a>
         </VerticalTimelineElement>
+
+        {/* Kenan Advantage Group (Driver) */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2010 - 2015"
-          iconStyle={{ background: "#ff4500", color: "#fff" }}
+          iconStyle={{ background: "#dc1818", color: "#fff" }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            CDL Class A Driver - Kenan Advantage Group
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Orlando, FL
-          </h4>
+          <a
+            href="https://drivers.thekag.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="timeline-link"
+          >
+            <h3 className="vertical-timeline-element-title">
+              Kenan Advantage Group - CDL Class A Driver
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Orlando, FL</h4>
+          </a>
         </VerticalTimelineElement>
 
+        {/* Kenan Advantage Group (Owner Operator) */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2015 - 2024"
-          iconStyle={{ background: "#ff4500", color: "#fff" }}
+          iconStyle={{ background: "#dc1818", color: "#fff" }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Owner Operator - Kenan Advantage Group 
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Orlando, FL
-          </h4>
+          <a
+            href="https://drivers.thekag.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="timeline-link"
+          >
+            <h3 className="vertical-timeline-element-title">
+              Kenan Advantage Group - Owner Operator
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Orlando, FL</h4>
+          </a>
         </VerticalTimelineElement>
+
+        {/* Toho Water Authority */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2025 - Present"
-          iconStyle={{ background: "#ff4500", color: "#fff" }}
+          iconStyle={{ background: "#dc1818", color: "#fff" }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Safety & Risk - Toho Water Authority 
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Kissimme, FL
-          </h4>
+          <a
+            href="https://tohowater.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="timeline-link"
+          >
+            <h3 className="vertical-timeline-element-title">
+              Toho Water Authority - Safety & Risk
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Kissimmee, FL</h4>
+          </a>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
   );
 }
 
-export default Experience
+export default Experience;
