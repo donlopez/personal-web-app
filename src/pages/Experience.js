@@ -19,7 +19,7 @@ function Experience() {
             Orlando, FL
           </h4>
 
-          <p> Associate's Degree In Computer Science </p>
+          <p> Associate of Science in Computer Programming & Analysis </p>
          </VerticalTimelineElement>
          <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -35,7 +35,7 @@ function Experience() {
             Orlando, FL
           </h4>
 
-          <p>Bachelor's Degree in Computer Science</p>
+          <p> Bachelor of Applied Science in Computing Technology & Software Development </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
