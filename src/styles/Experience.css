@@ -1,53 +1,66 @@
 .experience {
-    background-color: #232222;
-    color: #fff;
-    min-height: 100vh;
-    padding-top: 20px;
-  }
-  
-  /* White cards with pronounced white glow */
-  .vertical-timeline-element-content {
-    background: #ffffff !important;
-    color: #000 !important;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 
-                0 0 30px rgba(255, 255, 255, 0.15); /* stronger white glow */
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  /* Arrow matches card background */
-  .vertical-timeline-element-content::before {
-    border-right: 7px solid #ffffff !important;
-  }
-  
-  /* Date text visible on dark background */
+  background-color: #313131;
+  color: #fff;
+  /* min-height: 100vh;  <-- REMOVE THIS */
+  padding: 20px 0 150px 0; /* small bottom padding so timeline sits close to footer */
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* Make sure the timeline itself doesn't add extra gap at the bottom */
+.vertical-timeline {
+  margin-bottom: 0 !important;
+}
+
+/* White cards with pronounced white glow */
+.vertical-timeline-element-content {
+  background: #ffffff !important;
+  color: #000 !important;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3),
+              0 0 30px rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Arrow matches card background */
+.vertical-timeline-element-content::before {
+  border-right: 7px solid #ffffff !important;
+}
+
+/* Date text: desktop default (on dark bg) */
+.vertical-timeline-element-date {
+  color: #fff !important;
+}
+
+/* On mobile, dates sit on white cards, so use dark text */
+@media (max-width: 768px) {
   .vertical-timeline-element-date {
-    color: #fff !important;
-  }
-  
-  /* Titles and subtitles readable on white cards */
-  .vertical-timeline-element-title,
-  .vertical-timeline-element-subtitle {
     color: #000 !important;
   }
-  
-  /* Hover effect: brighter glow */
-  .vertical-timeline-element-content:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6),
-                0 0 50px rgba(255, 255, 255, 0.3);
-  }
-  
-  .timeline-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  
-  .timeline-link:hover {
-    transform: scale(1.02);
-    color: #1e90ff; /* optional: gives a hint of interactivity */
-  }
-  
+}
+
+/* Titles and subtitles readable on white cards */
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle {
+  color: #000 !important;
+}
+
+/* Hover effect: brighter glow */
+.vertical-timeline-element-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6),
+              0 0 50px rgba(255, 255, 255, 0.3);
+}
+
+.timeline-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.timeline-link:hover {
+  transform: scale(1.02);
+  color: #1e90ff;
+}
