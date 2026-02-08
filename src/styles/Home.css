@@ -42,94 +42,147 @@
   }
 }
 
+/* About section: black background, centered wider grey card */
 .about {
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   background-color: #000000;
   color: #f0f0f0;
-  padding: 60px 1rem 60px 1rem; 
+  padding: 60px 1rem 60px 1rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Wider about card */
+.about-card {
+  width: 100%;
+  max-width: 890px;
+  background-color: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 30px 26px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
 }
 
-.about h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 80px;
-  color: #58caf4;
-  height: 50px;
-}
-
+/* About text */
 .about .prompt {
-  width: 90%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 900px;
   font-size: 22px;
   line-height: 1.6;
-  padding: 0 1rem;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-}
-
-.about .prompt svg {
-  font-size: 60px;
-  margin: 5px;
-  color: white;
-}
-
-.prompt img.x-icon {
-  width: 52px;
-  height: 52px;
-  margin: 5px 10px;
-  display: inline-block;
-  vertical-align: middle;
-  object-fit: contain;
-  transform: translateY(-30px); /* <- Nudge up to align */
-}
-
-.skills {
-  font-size: 35px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.skills h1 {
-  color: #000000;
-}
-
-.skills .list {
-  list-style: none;
-  width: 60%;
-}
-
-.list span {
-  font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) {
   .about .prompt {
-      font-size: 16px;
-      line-height: 1.4;
-    }
-
-  .about h2 {
-    padding-top: 60px;
-    font-size: 40px;
+    font-size: 16px;
+    line-height: 1.4;
   }
+}
 
-  .skills {
+/* Signature area: keep centered, transparent, looks part of the about card */
+.signature-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+  background: transparent;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove the “card look” completely */
+.signature-card {
+  width: 100%;
+  max-width: 820px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center content as a whole */
+  gap: 18px;
+  box-sizing: border-box;
+}
+
+/* Logo container */
+.signature-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  gap: 8px;
+}
+
+.signature-logo {
+  width: 86px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Copyright under logo */
+.signature-copyright {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+}
+
+.signature-divider {
+  width: 2px;
+  align-self: stretch;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.signature-right {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.signature-name {
+  font-family: "Mistral", "Brush Script MT", "Segoe Script", cursive;
+  font-size: 32px;
+  line-height: 1.1;
+  color: #cfcfcf;
+}
+
+.signature-title {
+  font-size: 16px;
+  color: #d9d9d9;
+  margin-top: 2px;
+}
+
+.signature-link {
+  color: #58caf4;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.signature-link:hover {
+  text-decoration: underline;
+}
+
+/* Signature mobile layout */
+@media only screen and (max-width: 600px) {
+  .signature-card {
+    flex-direction: column;
     text-align: center;
-  }
-  .list {
-    padding: 0;
+    align-items: center;
   }
 
-  .skills h2 {
-    font-size: 30px;
+  .signature-divider {
+    width: 100%;
+    height: 2px;
+  }
+
+  .signature-right {
+    align-items: center;
   }
 }
 
@@ -169,7 +222,6 @@
 }
 
 /* Blog Section */
-
 .blog-section {
   padding: 2rem;
   position: relative;
@@ -214,7 +266,7 @@
   margin-bottom: 1rem;
 }
 
-/* ✕ close button — hidden by default */
+/* close button hidden by default */
 .blog-close-button {
   display: none;
   background: transparent;
