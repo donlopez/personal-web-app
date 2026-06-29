@@ -44,15 +44,18 @@ function Home() {
         <div className="about">
           <div className="about-card">
             <div className="prompt">
-              <p>Data Analyst and Software Developer focused on business-ready solutions.</p>
+              <p>Data and Software Engineer focused on delivering scalable, business-ready solutions across software, data, and AI.</p>
               <p>
-                Work centers on designing well-normalized databases for faster queries and strong data integrity,
-                transforming complex datasets into clear visualizations, and building RESTful applications end to end.
-                I connect front-end experiences for web and mobile to backend services and databases using JDBC and modern
-                API patterns, adapting to the technology stack required to get results.
+                I design and build normalized databases, data pipelines, backend services, and full-stack applications that
+                improve data reliability, system integration, and business decision-making. My work spans SQL, REST APIs,
+                JDBC, cloud-oriented architecture, reporting, visualization, and application development, with a focus on
+                performance, maintainability, and real-world usability.
               </p>
               <p>
-                Experience also includes SSO integrations with Active Directory and Amazon Cognito, supporting deployments across AWS and Azure environments.
+                I also build AI and machine learning solutions, including retrieval-augmented generation (RAG) systems,
+                intelligent search, and AI-ready data architectures that support modern business applications. By combining
+                software engineering, data engineering, and applied AI, I develop solutions that enhance automation,
+                analytics, and operational efficiency.
               </p>
             </div>
 
@@ -71,8 +74,8 @@ function Home() {
                   <div className="signature-title">Technology Solutions Consultant</div>
 
                   <a className="signature-link" href="mailto:jlopez@teklyra.com">jlopez@teklyra.com</a>
-                  <a className="signature-link" href="https://www.lopezbio.com" target="_blank" rel="noopener noreferrer">
-                    www.lopezbio.com
+                  <a className="signature-link" href="https://app.teklyra.com/" target="_blank" rel="noopener noreferrer">
+                    https://app.teklyra.com/ (Portfolio)
                   </a>
                 </div>
               </div>
